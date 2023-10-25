@@ -1,5 +1,6 @@
 "use client";
 import { useEffect } from "react";
+import { AnimatePresence } from "framer-motion";
 
 export default function Home() {
   useEffect(() => {
@@ -12,14 +13,17 @@ export default function Home() {
   return (
     <main>
       <h1>Landing Page</h1>
-      {/* <AnimatePresence mode='wait'>
+      {
+        <AnimatePresence mode="wait"></AnimatePresence>
+        /* <AnimatePresence mode='wait'>
         {isLoading && <Preloader />}
       </AnimatePresence>
       <Landing />
       <Description />
       <Projects />
       <SlidingImages />
-      <Contact /> */}
+      <Contact /> */
+      }
     </main>
   );
 }
